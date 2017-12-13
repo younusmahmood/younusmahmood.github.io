@@ -1,0 +1,101 @@
+#header, #about, #projects, #contact, #footer{
+  font-family: Roboto, sans-serif;
+  font-weight: 100;
+}
+
+.card .img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+/* Header Typewriter effect */
+.typewriter h1 {
+  font-family: Roboto, sans-serif;
+  font-weight: 100;
+  font-size: 4em;
+  color: #00BCD4;
+  overflow: hidden;
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  animation: 
+    typing 3s steps(100, end),
+    blink-caret 1s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0% }
+  to { width: 100% }
+}
+
+/* Header */
+#header {
+    padding: 10em 0;
+    text-align: center;
+}
+
+/* About */
+#about{
+    text-align: center;
+    padding: 2em 0;
+
+}
+
+#about h2 {
+    padding-bottom: 1em;
+}
+
+/* Projects */
+#projects{
+    text-align: center;
+    padding: 2em 0;
+}
+
+#projects h2 {
+    padding-bottom: 1em;
+}
+
+#projects img {
+    height: 180px;
+    width: 100%;
+    transition: 1s;
+}
+
+#projects img:hover {
+    transform: scale(1.5);
+    transition: 1s;
+}
+
+.card {
+    margin-left:1.1em;
+}
+
+/* Contact */
+#contact {
+    text-align: center;
+    padding: 2em 0;
+}
+
+/* Footer */
+.social-links {
+    list-style: none;
+    float: right;
+    
+}
+
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+    padding-right: 25px;
+}
+
+.social-links li:last-child {
+    margin-right: 0;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #888;
+    font-size: 160%;
+}
