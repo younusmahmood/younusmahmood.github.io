@@ -8,18 +8,20 @@
     max-width: 100%;
 }
 
+
 /* Header Typewriter effect */
 .typewriter h1 {
   font-family: Roboto, sans-serif;
-  font-weight: 100;
-  font-size: 4em;
-  color: #00BCD4;
+  font-weight: 100; 
+  font-size: 3em;
+  color: white;
   overflow: hidden;
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  border-right: 2px solid lightgray; 
+  white-space: nowrap; 
+  margin: auto;
   animation: 
-    typing 3s steps(100, end),
-    blink-caret 1s step-end infinite;
+    typing 3s steps(30),
+    blink-caret 1s infinite;
 }
 
 @keyframes typing {
@@ -27,10 +29,27 @@
   to { width: 100% }
 }
 
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: lightgray; }
+}
+
 /* Header */
 #header {
-    padding: 10em 0;
+    background: #333;
+    padding: 18em 0;
     text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.enter{
+    padding-top: 5rem;
+}
+
+.fa-angle-double-down{
+    font-size: 3rem;
+    color: #00BCD4;
 }
 
 /* About */
@@ -61,7 +80,7 @@
 }
 
 #projects img:hover {
-    transform: scale(1.5);
+    transform: scale(1.2);
     transition: 1s;
 }
 
@@ -94,4 +113,16 @@
     border: 0;
     color: #888;
     font-size: 160%;
+}
+
+.fa-instagram:hover {
+    color: #bc2a8d;
+}
+
+.fa-github:hover {
+    color: #4078c0;
+}
+
+.fa-envelope:hover {
+    color: #c71610;
 }
