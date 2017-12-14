@@ -8,6 +8,12 @@
     max-width: 100%;
 }
 
+.heading {
+    color:#00BCD4;
+    padding-bottom: 1em;
+    font-weight: 100;
+}
+
 
 /* Header Typewriter effect */
 .typewriter h1 {
@@ -37,7 +43,7 @@
 /* Header */
 #header {
     background: #333;
-    padding: 18em 0;
+    padding: 15em 0;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -59,18 +65,10 @@
 
 }
 
-#about h2 {
-    padding-bottom: 1em;
-}
-
 /* Projects */
 #projects{
     text-align: center;
     padding: 2em 0;
-}
-
-#projects h2 {
-    padding-bottom: 1em;
 }
 
 #projects img {
@@ -86,15 +84,33 @@
 
 /* Contact */
 #contact {
-    text-align: center;
     padding: 2em 0;
+    text-align: center;
+}
+
+.submit-btn:hover {
+    color: #00BCD4 !important;
+    border-color: #00BCD4 !important;
+    background: none !important;
 }
 
 /* Footer */
+#footer {
+    color: #888;
+    background: #333;
+    font-weight: 300;
+}
+
+#footer p{
+    margin-top: 1rem;
+    float: left;
+}
+
+
 .social-links {
     list-style: none;
     float: right;
-    
+    margin-top: .5em;
 }
 
 .social-links li {
@@ -125,4 +141,8 @@
 
 .fa-envelope:hover {
     color: #c71610;
+}
+
+.fa-linkedin:hover {
+    color: #0077b5;
 }
