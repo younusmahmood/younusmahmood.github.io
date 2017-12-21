@@ -43,10 +43,10 @@
 /* Header */
 #header {
     background: #333;
-    padding: 15em 0;
     text-align: center;
-    display: flex;
     justify-content: center;
+    padding: 15em 0;
+    display: flex;
 }
 
 .enter{
@@ -60,14 +60,14 @@
 
 /* About */
 #about{
-    text-align: center;
+    text-align: left;
     padding: 2em 0;
 
 }
 
 /* Projects */
 #projects{
-    text-align: center;
+    text-align: left;
     padding: 2em 0;
 }
 
@@ -85,7 +85,7 @@
 /* Contact */
 #contact {
     padding: 2em 0;
-    text-align: center;
+    text-align: left;
 }
 
 .submit-btn:hover {
@@ -94,6 +94,17 @@
     background: none !important;
 }
 
+.contactme {
+    text-decoration: none;
+    color:  #00BCD4;
+    transition: .4s;
+}
+
+.contactme:hover {
+    text-decoration: none;
+    color: #333;
+    transition: .4s;
+}
 /* Footer */
 #footer {
     color: #888;

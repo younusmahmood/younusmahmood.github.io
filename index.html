@@ -22,10 +22,10 @@
     <!-- Header -->
     <section id="header" class='grid'>
         <div class="typewriter">
-            <h1>Hi, I'm Younus!</h1>
+            <h1 id="introText" >Hi, I'm Younus!</h1>
             <div class="enter">
                 <a href="#about">
-                    <i class="fas fa-angle-double-down animated infinite swing"></i>
+                    <i class="arrow fas fa-angle-double-down animated infinite swing"></i>
                 </a>
             </div>
         </div>
@@ -35,7 +35,7 @@
     <section id="about">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 offset-md-3">
+                <div class="col-md-12">
                     <h2 class="heading">About Me</h2>
                 </div>
             </div>
@@ -55,7 +55,7 @@
     <section id="projects">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 offset-md-3">
+                <div class="col-md-12">
                     <h2 class="heading">Projects</h2>
                 </div>
             </div>
@@ -69,6 +69,7 @@
                             <p class="card-text">Application to build a task list throughout your day corresponding with times given. Built using
                                 MERN stack</p>
                             <a href="https://my-daily-journal.herokuapp.com/" target="_blank" class="btn btn-outline-info">Check it out!</a>
+                            <a href="https://github.com/younusmahmood/DailyJournal" target="_blank" class="btn btn-outline-info">Source Code</a>
                         </div>
                     </div>
                 </div>
@@ -103,16 +104,21 @@
         <div class="section-contact">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-8 offset-md-2">
-                        <h2 class='heading'>Contact Me</h2>
-                        <form action="index.php" role='form' method="post" class="form-horizontal">
+                    <div class="col-md-12">
+                        <h2 class='heading'>
+                            <a href="mailto:younus23@gmail.com?Subject=Hi" class="contactme">
+                                Contact Me
+                            </a>
+                        </h2>
+
+                        <form action="https://formspree.io/younus23@gmail.com" id="contactform" role='form' method="post" class="form-horizontal">
                             <div class="form-group">
                                 <div class="row">
                                     <label for="name" class="col-sm-2 control-label">
                                         Name
                                     </label>
                                     <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="name"  value="">
+                                        <input type="text" name="name" class="form-control" id="name" value="">
                                     </div>
                                 </div>
                             </div>
@@ -122,11 +128,10 @@
                                         Email
                                     </label>
                                     <div class="col-sm-10">
-                                        <input type="email" class="form-control" id="email" value="">
+                                        <input type="email" name="_replyto" class="form-control" id="email" value="">
                                     </div>
                                 </div>
                             </div>
-
 
                             <div class="form-group">
                                 <div class="row">
@@ -134,16 +139,16 @@
                                         Message
                                     </label>
                                     <div class="col-sm-10">
-                                        <textarea type="message" class="form-control" row='4' name="email" value=""></textarea>
+                                        <textarea type="hidden" class="form-control" row='4' name="description" value=""></textarea>
                                     </div>
                                 </div>
                             </div>
-
                             <div class="form-group">
                                 <div class="col-sm-8 offset-sm-2">
-                                    <input type="submit" id="submit" value="Send!" class="btn btn-outline-secondary submit-btn">
+                                    <input type="submit" id="submit" value="Send" class="btn btn-outline-secondary submit-btn">
                                 </div>
                             </div>
+                            <input type="text" name="_gotcha" style="display:none" />
                         </form>
                     </div>
                 </div>
@@ -168,11 +173,6 @@
                         <li>
                             <a href="https://www.instagram.com/younusmahmood/?hl=en" target="_blank">
                                 <i class="fab fa-instagram"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="far fa-envelope"></i>
                             </a>
                         </li>
                         <li>

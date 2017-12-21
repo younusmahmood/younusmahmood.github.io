@@ -13,3 +13,27 @@ $(".enter a[href^='#']").on("click", function(e) {
     }
   );
 });
+
+var message = "";
+
+$("#submit").on("click", function() {
+  message = $("#contactform").serialize();
+  $.ajax({
+    url: "//formspree.io/younus23@gmail.com",
+    method: "POST",
+    data: { message: message },
+    dataType: "json"
+  });
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+
+  document.getElementById("introText").innerHTML = "Thank you!";
+  $('.arrow').removeClass("infintie swing");
+  setTimeout(function() {
+    document.getElementById("introText").innerHTML = "Hi, I'm Back!";
+    $(".arrow").addClass("infintie swing");
+  }, 5000);
+
+  return false;
+});
+
