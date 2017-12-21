@@ -62,7 +62,10 @@
 #about{
     text-align: left;
     padding: 2em 0;
+}
 
+.aboutText {
+    font-size: 1.2em;
 }
 
 /* Projects */
